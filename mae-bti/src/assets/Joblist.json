@@ -1,68 +1,47 @@
 [
     {
-        "jobname" : "히어로"
+        "jobname": "아델",
+        "isUtilGood": "no",
+        "isCoreEasy": "no",
+        "isDamageGood": "yes",
+        "isUnion6000": "no",
+        "isBossEasy": "yes",
+        "isFieldEasy": "yes"
     },
     {
-        "jobname" : "팔라딘"
+        "jobname": "비숍",
+        "isUtilGood": "yes",
+        "isCoreEasy": "yes",
+        "isDamageGood": "no",
+        "isUnion6000": "yes",
+        "isBossEasy": "yes",
+        "isFieldEasy": "no"
     },
     {
-        "jobname" : "다크나이트"
+        "jobname": "썬콜",
+        "isUtilGood": "yes",
+        "isCoreEasy": "yes",
+        "isDamageGood": "yes",
+        "isUnion6000": "yes",
+        "isBossEasy": "yes",
+        "isFieldEasy": "yes"
     },
     {
-        "jobname" : "아크메이지(불,독)"
+        "jobname": "키네시스",
+        "isUtilGood": "no",
+        "isCoreEasy": "no",
+        "isDamageGood": "no",
+        "isUnion6000": "no",
+        "isBossEasy": "no",
+        "isFieldEasy": "yes"
     },
     {
-        "jobname" : "아크메이지(썬,콜)"
-    },
-    {
-        "jobname" : "비숍"
-    },
-    {
-        "jobname" : "보우마스터"
-    },
-    {
-        "jobname" : "신궁"
-    },
-    {
-        "jobname" : "패스파인더"
-    },
-    {
-        "jobname" : "나이트로드"
-    },
-    {
-        "jobname" : "섀도어"
-    },
-    {
-        "jobname" : "듀얼블레이드"
-    },
-    {
-        "jobname" : "바이퍼"
-    },
-    {
-        "jobname" : "캡틴"
-    },
-    {
-        "jobname" : "캐논슈터"
-    },
-    {
-        "jobname" : "소울마스터"
-    },
-    {
-        "jobname" : "플레임위자드"
-    },
-    {
-        "jobname" : "윈드브레이커"
-    },
-    {
-        "jobname" : "나이트워커"
-    },
-    {
-        "jobname" : "스트라이커"
-    },
-    {
-        "jobname" : "블래스터"
-    },
-    {
-        
+        "jobname": "히어로",
+        "isUtilGood": "yes",
+        "isCoreEasy": "yes",
+        "isDamageGood": "yes",
+        "isUnion6000": "no",
+        "isBossEasy": "yes",
+        "isFieldEasy": "no"
     }
 ]

@@ -16,6 +16,7 @@ const router = createRouter({
     {
       path: '/result',
       name: 'result',
+      props: (route) => ({ ...route.query }),
       component: () => import('../views/ResultView.vue')
     },
     {

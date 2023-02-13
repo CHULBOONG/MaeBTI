@@ -1,19 +1,26 @@
 [
     {
-        "question": "유틸이 좋은 직업을 선호합니까?",
-        "job": [
-            "비숍",
-            "아크메이지(썬,콜)"
-        ]
+        "question": "직업의 유틸성을 우선시합니까?",
+        "sortation": "isUtilGood"
     },
     {
-        "question": "데미지가 강한 직업을 선호합니까?",
-        "job": [
-            "아델",
-            "아크메이지(썬,콜)"
-        ]
+        "question": "코어강화 난이도를 우선시합니까?",
+        "sortation": "isCoreEasy"
     },
     {
-        "question": "유니온이 6000 이상입니까?"
+        "question": "데미지가 강한 직업을 우선시합니까?",
+        "sortation": "isDamageGood"
+    },
+    {
+        "question": "유니온이 6000이상입니까?",
+        "sortation": "isUnion6000"
+    },
+    {
+        "question": "보스 플레이를 주로 합니까?",
+        "sortation": "isBossEasy"
+    },
+    {
+        "question": "사냥 플레이 시간이 깁니까?",
+        "sortation": "isFieldEasy"
     }
 ]

@@ -88,7 +88,7 @@
     }
 }
 
-@media (hover: none) {
+/* @media (hover: none) {
     .button-response:active {
         border: #3b75d2 solid 1px;
         box-shadow: 0px 0px 5px #3b75d2;
@@ -104,7 +104,7 @@
         border: #999 solid 1px;
         cursor: default;
     }
-}
+} */
 </style>
 
 <script>
