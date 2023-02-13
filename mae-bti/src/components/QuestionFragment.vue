@@ -70,22 +70,22 @@
     background-color: #999;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
     .button-response:hover {
         border: #3b75d2 solid 1px;
         box-shadow: 0px 0px 5px #3b75d2;
         cursor: pointer;
     }
+}
 
-    .button-bottom:hover {
-        border: #fff solid 1px;
-        cursor: pointer;
-    }
+.button-bottom:hover {
+    border: #fff solid 1px;
+    cursor: pointer;
+}
 
-    .button-bottom-disabled:hover {
-        border: #999 solid 1px;
-        cursor: default;
-    }
+.button-bottom-disabled:hover {
+    border: #999 solid 1px;
+    cursor: default;
 }
 
 /* @media (hover: none) {
