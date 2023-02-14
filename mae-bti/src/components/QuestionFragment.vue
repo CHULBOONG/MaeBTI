@@ -1,5 +1,5 @@
 <template>
-    <div class="white-shadow">Question</div>
+    <div class="white-shadow">Question {{ currentIndex + 1 }}.</div>
     <div class="question-content">{{ questionContent() }}</div>
     <div class="button-response" v-for="i in [...Array(5)].map((_, i) => 2 - i)" @click="responseQuestion(i)"
         :class="selectedClass(i)">{{ responseContent[2 - i] }}</div>

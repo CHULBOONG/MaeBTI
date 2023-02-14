@@ -2,7 +2,7 @@
   <div class="progress">
     <div class="progress-bar" :style="{ width: (currentIndex + 1) / questionLength * 100 + '%' }"></div>
   </div>
-  <div class="white-shadow">{{ currentIndex + 1 }}/{{ questionLength }}</div>
+  <div class="white-shadow" style="position: fixed; top: 0;">{{ currentIndex + 1 }}/{{ questionLength }}</div>
   <Question :current-index="currentIndex" :question-length="questionLength" :question-content="questionContent"
     :next-question="nextQuestion" :prev-question="prevQuestion" :response-question="responseQuestion"
     :selected-class="selectedClass">
@@ -29,13 +29,16 @@
 }
 
 .progress {
+  position: fixed;
+  top: 0;
   width: 100vw;
   height: 20px;
   background-color: #ddd;
-  margin: 10px 0;
 }
 
 .progress-bar {
+  position: fixed;
+  top: 0;
   height: 20px;
   background-color: var(--primary-blue);
   transition: width 0.5s;
