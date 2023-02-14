@@ -14,7 +14,6 @@
   src: url('/Maplestory\ Bold.ttf') format('truetype');
 }
 
-/* .backimg should blur, bottom end of image locate in bottom of screen */
 .backimg {
   position: absolute;
   width: 100vw;
