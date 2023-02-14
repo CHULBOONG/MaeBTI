@@ -2,6 +2,7 @@
   <RouterView :backMove="backMove" />
   <img class="backimg" src="/eostower.png" :style="objectPositionValue" alt="eos" />
   <div class="dark-overlay"></div>
+  <div v-if="block" class="dark-overlay white-shadow" style="z-index: 10; text-align: center;">loading...</div>
 </template>
 
 <style>
@@ -35,10 +36,13 @@ export default {
   data() {
     return {
       objectPositionValue: { objectPosition: '0 100%' },
+      block: true,
     }
   },
+  mounted() {
+    window.addEventListener('load', () => {this.block = false});
+  },
   methods: {
-    // return style object-position for vue
     backMove(percent) {
       this.objectPositionValue = { objectPosition: '0 ' + (100 - percent) + '%' }
       console.log(this.objectPositionValue);
