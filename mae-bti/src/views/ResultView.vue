@@ -1,10 +1,10 @@
 <template>
     <h1>Result View</h1>
-    <div>Result Area</div>
-    <div>{{ $route.query.job }}</div>
+    <div class="white-shadow">Result Area</div>
+    <div class="white-shadow">{{ $route.query.job }}</div>
     <div class="image-area">이미지 영역</div>
-    <div>텍스트 영역</div>
-    <div style="text-align: center;">{{ getJobProperty() }}</div>
+    <div class="white-shadow">텍스트 영역</div>
+    <div class="white-shadow" style="text-align: center;">{{ getJobProperty() }}</div>
     <RouterLink to="/">go to Main View</RouterLink>
     <RouterLink to="/jobs">go to Jobs View</RouterLink>
 </template>

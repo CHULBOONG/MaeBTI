@@ -2,7 +2,7 @@
   <div class="progress">
     <div class="progress-bar" :style="{ width: (currentIndex + 1) / questionLength * 100 + '%' }"></div>
   </div>
-  <div>{{ currentIndex + 1 }}/{{ questionLength }}</div>
+  <div class="white-shadow">{{ currentIndex + 1 }}/{{ questionLength }}</div>
   <Question :current-index="currentIndex" :question-length="questionLength" :question-content="questionContent"
     :next-question="nextQuestion" :prev-question="prevQuestion" :response-question="responseQuestion"
     :selected-class="selectedClass">
@@ -17,7 +17,7 @@
 <style>
 .blink {
   font-size: 20px;
-  color: #bd2200;
+  color: var(--primary-red);
 }
 
 .move {
@@ -37,7 +37,7 @@
 
 .progress-bar {
   height: 20px;
-  background-color: #3b75d2;
+  background-color: var(--primary-blue);
   transition: width 0.5s;
 }
 </style>
@@ -48,6 +48,9 @@ import QuestionFragment from '../components/QuestionFragment.vue';
 import { extractJobRank } from '@/utils/jobselector.js';
 
 export default {
+  props: {
+    backMove: Function
+  },
   components: {
     Question: QuestionFragment
   },
@@ -70,6 +73,13 @@ export default {
           this.responseAll();
           this.jobRank = extractJobRank(this.storeResponse);
         }
+        let x = 0;
+        for (let i = 0; i < this.questionLength; i++) {
+          if (this.storeResponse[i] !== undefined) {
+            x++;
+          }
+        }
+        this.backMove(x / this.questionLength * 100);
       },
       deep: true
     }
