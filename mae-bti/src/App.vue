@@ -1,6 +1,6 @@
 <template>
   <RouterView :backMove="backMove" />
-  <img class="backimg" src="/eostower.png" :style="objectPositionValue" alt="eos" />
+  <img class="backimg" src="/eostower.webp" :style="objectPositionValue" alt="eos" />
   <div class="dark-overlay"></div>
   <div v-if="block" class="loading">
     loading...
