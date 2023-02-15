@@ -1,5 +1,5 @@
 <template>
-    <div>Question</div>
+    <div class="white-shadow">Question {{ currentIndex + 1 }}.</div>
     <div class="question-content">{{ questionContent() }}</div>
     <div class="button-response" v-for="i in [...Array(5)].map((_, i) => 2 - i)" @click="responseQuestion(i)"
         :class="selectedClass(i)">{{ responseContent[2 - i] }}</div>
@@ -41,12 +41,13 @@
 }
 
 .button-response:active {
-    background-color: #3b75d2;
+    background-color: var(--primary-blue);
     cursor: pointer;
 }
 
 .selected {
-    background-color: #3b75d2;
+    background-color: var(--primary-blue);
+    text-shadow: 0px 0px 1px #fff ;
 }
 
 .bottom-container {
@@ -72,8 +73,8 @@
 
 @media (hover: hover) and (pointer: fine) {
     .button-response:hover {
-        border: #3b75d2 solid 1px;
-        box-shadow: 0px 0px 5px #3b75d2;
+        border: var(--primary-blue) solid 1px;
+        box-shadow: 0px 0px 5px var(--primary-blue);
         cursor: pointer;
     }
 }

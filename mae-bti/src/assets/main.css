@@ -11,13 +11,28 @@ body {
   font-family: 'Maplestory Bold';
   height: 100vh;
   width: 100vw;
-  background-color: #ddd;
   user-select: none;
 }
 
 a {
   text-decoration: underline;
-  color: #00BD7E;
+  color: var(--primary-green);
   transition: 0.4s;
   font-size: 20px;
+}
+
+h1 {
+  color: white;
+  text-shadow: 0 0 10px #000;
+}
+
+:root {
+  --primary-green: #00BD7E;
+  --primary-blue: #00A1FF;
+  --primary-red: #FF0000;
+}
+
+.white-shadow {
+  color: white;
+  text-shadow: 0 0 10px #000;
 }

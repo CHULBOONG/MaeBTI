@@ -3,3 +3,14 @@
   <RouterLink to="/inspect">go to Inspect View</RouterLink>
   <RouterLink to="/jobs">go to Jobs View</RouterLink>
 </template>
+
+<script>
+export default {
+  props: {
+    backMove: Function
+  },
+  created() {
+    this.backMove(0);
+  }
+}
+</script>

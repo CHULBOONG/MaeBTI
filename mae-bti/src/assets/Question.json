@@ -1,26 +1,78 @@
 [
     {
-        "question": "직업의 유틸성을 우선시합니까?",
+        "question": "나는 직업의 유틸성을 중요하게 생각한다",
         "sortation": "isUtilGood"
     },
     {
-        "question": "코어강화 난이도를 우선시합니까?",
+        "question": "무엇보다도 코어강화 난이도가 쉬워야한다",
         "sortation": "isCoreEasy"
     },
     {
-        "question": "데미지가 강한 직업을 우선시합니까?",
+        "question": "직업의 이론상 데미지가 높아야한다",
         "sortation": "isDamageGood"
     },
     {
-        "question": "유니온이 6000이상입니까?",
-        "sortation": "isUnion6000"
+        "question": "나는 유니온 캐릭터 육성에 자신있다!",
+        "sortation": "isUnionable"
     },
     {
-        "question": "보스 플레이를 주로 합니까?",
+        "question": "주로 보스플레이를 즐긴다",
         "sortation": "isBossEasy"
     },
     {
-        "question": "사냥 플레이 시간이 깁니까?",
+        "question": "주로 사냥플레이를 즐긴다",
         "sortation": "isFieldEasy"
+    },
+    {
+        "question": "이동기로 트리플 점프가 좋다고 생각한다",
+        "sortation": "hasTripleJump"
+    },
+    {
+        "question": "이동기로 텔레포트 직업이 좋다고 생각한다",
+        "sortation": "hasTeleport"
+    },
+    {
+        "question": "나는 지속적으로 때리는 직업이 좋거나 지속 데미지에 자신이 있다",
+        "sortation": "isComDealer"
+    },
+    {
+        "question": "나는 단숨에 강한 데미지를 넣는게 좋다",
+        "sortation": "isUltDealer"
+    },
+    {
+        "question": "연계 스킬 사용을 좋아한다",
+        "sortation": "UseLinkedskill"
+    },
+    {
+        "question": "자기버프보다 파티원을 강화해주는 스킬이 있으면 좋겠다",
+        "sortation": "hasPartyUtil"
+    },
+    {
+        "question": "자체 바인드가 있으면 좋겠다",
+        "sortation": "hasOwnBind"
+    },
+    {
+        "question": "강력한 키다운 공격 스킬이 있으면 좋다",
+        "sortation": "hasKeyDown"
+    },
+    {
+        "question": "내 캐릭터 직업을 다른 사람들이 잘 안했으면 좋겠다",
+        "sortation": "isUnique"
+    },
+    {
+        "question": "근거리 딜러(근거리에서 공격하는 직업)가 좋다",
+        "sortation": "isAttackRangeShort"
+    },
+    {
+        "question": "카루타, 스데미까지 잡기 편한 직업이 좋다",
+        "sortation": "isNewbieGood"
+    },
+    {
+        "question": "사냥마릿수 상관없이 사냥 스킬 원킬컷이 낮은 직업이 좋다",
+        "sortation": "isFieldSkillEasy"
+    },
+    {
+        "question": "보스 딜링 난이도가 쉬운 직업이 좋다",
+        "sortation": "isEasyDeal"
     }
 ]
