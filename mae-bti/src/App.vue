@@ -11,7 +11,7 @@
 <style>
 @font-face {
   font-family: 'Maplestory Bold';
-  src: url('/Maplestory\ Bold.ttf') format('truetype');
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
 }
 
 .backimg {
@@ -76,7 +76,7 @@ export default {
     }
   },
   mounted() {
-    window.addEventListener('load', () => {this.block = false});
+    window.addEventListener('load', () => { this.block = false });
   },
   methods: {
     backMove(percent) {
