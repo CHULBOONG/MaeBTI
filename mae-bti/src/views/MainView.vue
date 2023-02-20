@@ -12,7 +12,6 @@
   position: fixed;
   bottom: 5vh;
   right: 5vw;
-  z-index: 2;
   background-color: #fff;
   padding: 10px;
   border-radius: 5px;

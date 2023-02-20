@@ -1,7 +1,9 @@
 <template>
   <RouterView :backMove="backMove" :backimgChange="backimgChange" />
-  <img class="backimg" :class="backimgMove()" :src="backimgList[currentBackimgIndex]" :style="objectPositionValue"
-    alt="eos" />
+  <div class="imgcontainer">
+    <img class="backimg" :class="backimgMove()" :src="backimgList[currentBackimgIndex]" :style="objectPositionValue"
+      alt="eos" />
+  </div>
   <div class="dark-overlay"></div>
   <div v-if="block" class="loading">
     loading...
@@ -13,6 +15,14 @@
 @font-face {
   font-family: 'Maplestory Bold';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+}
+
+.imgcontainer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
 }
 
 .backimg {
@@ -64,7 +74,7 @@
   color: #000;
   font-size: 20px;
   font-family: sans-serif;
-  z-index: 1;
+  z-index: 100;
 }
 
 .loading-spin {
@@ -84,10 +94,6 @@
   100% {
     transform: rotate(360deg);
   }
-}
-
-html {
-  overflow: hidden;
 }
 </style>
 
