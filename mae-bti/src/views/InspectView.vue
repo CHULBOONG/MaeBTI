@@ -8,20 +8,12 @@
     :selected-class="selectedClass">
   </Question>
   <RouterLink v-if="resultVisible" :to="{ name: 'result', query: { job: jobRank[0] } }">go to Result View</RouterLink>
-  <div v-else class="blink">Please answer all questions
-    <div class="move" @click="toIncompleteQuestion">Move to incomplete question
-    </div>
-  </div>
+  <a v-else class="incomplete" @click="toIncompleteQuestion">Move to incomplete</a>
 </template>
 
 <style>
-.blink {
-  font-size: 20px;
-  color: var(--primary-red);
-}
-
-.move {
-  text-decoration: underline;
+.incomplete {
+  background-color: var(--primary-red);
 }
 
 .move:hover {

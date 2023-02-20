@@ -1,6 +1,7 @@
 <template>
-  <RouterView :backMove="backMove" />
-  <img class="backimg" src="/eostower.webp" :style="objectPositionValue" alt="eos" />
+  <RouterView :backMove="backMove" :backimgChange="backimgChange" />
+  <img class="backimg" :class="backimgMove()" :src="backimgList[currentBackimgIndex]" :style="objectPositionValue"
+    alt="eos" />
   <div class="dark-overlay"></div>
   <div v-if="block" class="loading">
     loading...
@@ -23,6 +24,25 @@
   filter: blur(7px);
   transition: 0.3s;
   opacity: 0.3;
+  scale: 1.01;
+}
+
+.backimg-move {
+  animation: move 0.5s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-1%);
+  }
+
+  50% {
+    transform: translateX(1%);
+  }
+
+  100% {
+    transform: translateX(-1%);
+  }
 }
 
 .dark-overlay {
@@ -65,6 +85,10 @@
     transform: rotate(360deg);
   }
 }
+
+html {
+  overflow: hidden;
+}
 </style>
 
 <script>
@@ -73,6 +97,12 @@ export default {
     return {
       objectPositionValue: { objectPosition: '0 100%' },
       block: true,
+      backimgList: [
+        '/eostower.webp',
+        '/pathoftime.webp',
+        '/mureung.webp',
+      ],
+      currentBackimgIndex: 0,
     }
   },
   mounted() {
@@ -81,7 +111,16 @@ export default {
   methods: {
     backMove(percent) {
       this.objectPositionValue = { objectPosition: '0 ' + (100 - percent) + '%' }
-      console.log(this.objectPositionValue);
+    },
+    backimgMove() {
+      if (this.$route.path === '/') {
+        return 'backimg-move'
+      } else {
+        return ''
+      }
+    },
+    backimgChange() {
+      this.currentBackimgIndex = (this.currentBackimgIndex + 1) % this.backimgList.length;
     }
   },
 }
