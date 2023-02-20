@@ -3,7 +3,7 @@
   <RouterLink to="/inspect">go to Inspect View</RouterLink>
   <RouterLink to="/jobs">go to Jobs View</RouterLink>
   <div class="backimg-change" @click="backimgChange">
-    <img src="imgicon.png" />
+    <img src="/imgicon.png" />
   </div>
 </template>
 
