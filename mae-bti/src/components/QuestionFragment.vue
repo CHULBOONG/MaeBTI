@@ -23,21 +23,26 @@
     background-color: #fff;
     box-shadow: 0px 0px 5px #999;
     text-align: center;
-    line-height: 100px;
     margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button-response {
-    width: 200px;
-    height: 50px;
+    width: 80vw;
+    max-width: 240px;
+    height: 15vw;
+    max-height: 50px;
     background-color: #F48D09;
     color: #fff;
     border-radius: 5px;
-    text-align: center;
-    line-height: 50px;
     margin: 5px;
     border: #fff solid 1px;
     box-shadow: 0px 0px 5px #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button-response:active {
@@ -51,19 +56,24 @@
 }
 
 .bottom-container {
-    height: 50px;
+    height: 15vw;
+    max-height: 50px;
     margin: 10px;
     box-shadow: 0px 0px 5px #999;
 }
 
 .button-bottom {
-    width: 100px;
-    height: 50px;
+    width: 40vw;
+    max-width: 120px;
+    height: 15vw;
+    max-height: 50px;
     background-color: #fff;
     text-align: center;
-    line-height: 50px;
     margin: 0px;
     border: #999 solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button-bottom-disabled {

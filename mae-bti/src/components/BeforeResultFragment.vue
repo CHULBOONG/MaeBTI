@@ -1,7 +1,7 @@
 <template>
     <div class="blinder" @click="closeFragment" ref="blinder">
         <img class="bgimg" src="/mushroombg.png" />
-        <div style="z-index: 10;">click anywhere to see result</div>
+        <div style="z-index: 10; text-align: center;">click anywhere to see result</div>
     </div>
 </template>
 
