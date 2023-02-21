@@ -1,4 +1,5 @@
 <template>
+    <BeforeResult></BeforeResult>
     <h1>Result View</h1>
     <div class="white-shadow">Result Area</div>
     <div class="white-shadow">{{ $route.query.job }}</div>
@@ -22,8 +23,12 @@
 
 <script>
 import Joblist from '../assets/Joblist.json';
+import BeforeResultFragment from '../components/BeforeResultFragment.vue';
 
 export default {
+    components: {
+        BeforeResult: BeforeResultFragment
+    },
     methods: {
         getJobProperty() {
             for (let i = 0; i < Joblist.length; i++) {

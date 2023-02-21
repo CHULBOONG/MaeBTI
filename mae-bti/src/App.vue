@@ -38,7 +38,7 @@
 }
 
 .backimg-move {
-  animation: move 0.5s linear infinite;
+  animation: move 10s linear infinite;
 }
 
 @keyframes move {
@@ -108,11 +108,23 @@ export default {
         '/pathoftime.webp',
         '/mureung.webp',
       ],
+      pubimgList: [
+        '/imgicon.png',
+        '/mushroombg.png',
+      ],
       currentBackimgIndex: 0,
     }
   },
   mounted() {
     window.addEventListener('load', () => { this.block = false });
+    this.backimgList.forEach((img) => {
+      const image = new Image();
+      image.src = img;
+    });
+    this.pubimgList.forEach((img) => {
+      const image = new Image();
+      image.src = img;
+    });
   },
   methods: {
     backMove(percent) {

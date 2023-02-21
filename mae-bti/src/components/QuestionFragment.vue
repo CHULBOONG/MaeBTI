@@ -1,8 +1,8 @@
 <template>
     <div class="white-shadow">Question {{ currentIndex + 1 }}.</div>
     <div class="question-content">{{ questionContent() }}</div>
-    <div class="button-response" v-for="i in [...Array(5)].map((_, i) => 2 - i)" @click="responseQuestion(i)"
-        :class="selectedClass(i)">{{ responseContent[2 - i] }}</div>
+    <div class="button-response" v-for="i in [...Array(5)].map((_, i) => 4 - i)" @click="responseQuestion(i)"
+        :class="selectedClass(i)">{{ responseContent[4 - i] }}</div>
     <div class="flex-row-center-center bottom-container">
         <div class="button-bottom" :class="prevDisabled()" @click="prevQuestion">&lt;</div>
         <div class="button-bottom" :class="nextDisabled()" @click="nextQuestion">&gt;</div>
@@ -47,7 +47,7 @@
 
 .selected {
     background-color: var(--primary-blue);
-    text-shadow: 0px 0px 1px #fff ;
+    text-shadow: 0px 0px 1px #fff;
 }
 
 .bottom-container {

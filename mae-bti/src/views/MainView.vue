@@ -18,17 +18,19 @@
   width: 50px;
   height: 50px;
   cursor: pointer;
+  background-color: var(--primary-orange);
+  border: #fff 1px solid;
 }
 
 .backimg-change img {
   width: 100%;
   height: 100%;
-  filter: opacity(90%);
+  filter: invert(1);
 }
 
 @media (hover: hover) and (pointer: fine) {
   .backimg-change:hover {
-    background-color: var(--primary-orange)
+    background-color: var(--primary-yellow)
   }
 }
 </style>
