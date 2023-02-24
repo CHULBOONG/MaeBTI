@@ -5,7 +5,8 @@
         :class="selectedClass(i)">{{ responseContent[4 - i] }}</div>
     <div class="flex-row-center-center bottom-container">
         <div class="button-bottom" :class="prevDisabled()" @click="prevQuestion">&lt;</div>
-        <div class="button-bottom" :class="nextDisabled()" @click="nextQuestion">&gt;</div>
+        <div class="button-bottom" :class="nextDisabled(), { 'button-bottom-blink': nextButtonBlink() }"
+            @click="nextQuestion">&gt;</div>
     </div>
 </template>
 
@@ -67,7 +68,7 @@
     max-width: 120px;
     height: 15vw;
     max-height: 50px;
-    background-color: #fff;
+    background-color: #eee;
     text-align: center;
     margin: 0px;
     border: #999 solid 1px;
@@ -99,6 +100,20 @@
     cursor: default;
 }
 
+.button-bottom-blink {
+    animation: background-blink 1s infinite steps(1);
+}
+
+@keyframes background-blink {
+    0% {
+        background-color: #fff;
+    }
+
+    50% {
+        background-color: #eee;
+    }
+}
+
 /* @media (hover: none) {
     .button-response:active {
         border: #3b75d2 solid 1px;
@@ -127,11 +142,12 @@ export default {
         nextQuestion: Function,
         prevQuestion: Function,
         responseQuestion: Function,
-        selectedClass: Function
+        selectedClass: Function,
+        nextButtonBlink: Function
     },
     data() {
         return {
-            responseContent: ['매우 그렇다', '그렇다', '보통이다', '아니다', '매우 아니다']
+            responseContent: ['매우 그렇다', '그렇다', '잘 모르겠다', '아니다', '매우 아니다']
         }
     },
     methods: {

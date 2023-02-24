@@ -5,16 +5,28 @@
   <div class="white-shadow" style="position: fixed; top: 0;">{{ currentIndex + 1 }}/{{ questionLength }}</div>
   <Question :current-index="currentIndex" :question-length="questionLength" :question-content="questionContent"
     :next-question="nextQuestion" :prev-question="prevQuestion" :response-question="responseQuestion"
-    :selected-class="selectedClass">
+    :selected-class="selectedClass" :next-button-blink="nextButtonBlink">
   </Question>
-  <RouterLink v-if="resultVisible" :to="{ name: 'result', query: { job: jobRank[0] } }">go to Result View</RouterLink>
-  <a v-else class="incomplete" @click="toIncompleteQuestion">Move to incomplete</a>
+  <RouterLink v-if="resultVisible" class="button-blink" :to="{ name: 'result', query: { job: jobRank[0] } }">결과 보기
+  </RouterLink>
+  <a v-else v-if="incompleteChecker" class="incomplete button-blink" @click="toIncompleteQuestion">응답하지않은 문항으로 가기</a>
 </template>
 
-<style>
+<style scoped>
 .incomplete {
   background-color: var(--primary-red);
 }
+
+/* .incomplete-disabled {
+  filter: grayscale(100%);
+  animation: none;
+  color: #999;
+  border-color: #999;
+}
+
+.incomplete-disabled:hover {
+  cursor: default;
+} */
 
 .move:hover {
   cursor: pointer;
@@ -44,13 +56,14 @@ import { extractJobRank } from '@/utils/jobselector.js';
 
 export default {
   props: {
-    backMove: Function
+    backimgMoveUp: Function
   },
   components: {
     Question: QuestionFragment
   },
   data() {
     return {
+      incompleteChecker: false,
       currentIndex: 0,
       resultVisible: false,
       questionLength: Questions.length,
@@ -74,7 +87,8 @@ export default {
             x++;
           }
         }
-        this.backMove(x / this.questionLength * 100);
+        this.backimgMoveUp(x / this.questionLength * 100);
+        this.incompleteCheckMethod();
       },
       deep: true
     }
@@ -87,11 +101,13 @@ export default {
       if (this.currentIndex < this.questionLength - 1) {
         this.currentIndex++;
       }
+      this.incompleteCheckMethod();
     },
     prevQuestion() {
       if (this.currentIndex > 0) {
         this.currentIndex--;
       }
+      this.incompleteCheckMethod();
     },
     responseQuestion(response) {
       this.storeResponse[this.currentIndex] = response;
@@ -103,7 +119,41 @@ export default {
       this.resultVisible = true;
     },
     toIncompleteQuestion() {
-      this.currentIndex = this.storeResponse.findIndex(response => response === undefined);
+      if (this.incompleteChecker) {
+        this.currentIndex = this.storeResponse.findIndex(response => response === undefined);
+        this.incompleteChecker = false;
+      }
+    },
+    incompleteCheckMethod() {
+      if (this.currentIndex > 0) {
+        for (let i = 0; i < this.currentIndex; i++) {
+          if (this.storeResponse[i] === undefined) {
+            this.incompleteChecker = true;
+            return;
+          }
+        }
+      }
+      if (this.currentIndex < this.questionLength - 1) {
+        let undefinedExist = false;
+        let responseExist = false;
+        for (let i = this.currentIndex + 1; i < this.questionLength; i++) {
+          if (this.storeResponse[i] === undefined) {
+            undefinedExist = true;
+          } else {
+            responseExist = true;
+          }
+        }
+        if (undefinedExist && responseExist) {
+          this.incompleteChecker = true;
+          return;
+        }
+      }
+      this.incompleteChecker = false;
+      return;
+    },
+    nextButtonBlink() {
+      //currentResponsedAndIncompleteCheckerFalse
+      return (this.storeResponse[this.currentIndex] !== undefined) && (this.incompleteChecker === false) && (this.currentIndex < this.questionLength - 1) ? true : false;
     }
   }
 }

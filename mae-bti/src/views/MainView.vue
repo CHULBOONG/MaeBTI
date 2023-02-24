@@ -1,17 +1,37 @@
 <template>
   <h1>Main View</h1>
-  <RouterLink to="/inspect">go to Inspect View</RouterLink>
+  <RouterLink class="button-blink" to="/inspect">내 직업 성향 알아보러 가기</RouterLink>
   <RouterLink to="/jobs">go to Jobs View</RouterLink>
-  <div class="backimg-change" @click="backimgChange">
-    <img src="/imgicon.png" />
+  <div class="backimg-change-container">
+    <div class="backimg-change-description">클릭하여 배경을 바꿔보세요 >></div>
+    <div class="backimg-change" @click="backimgChange">
+      <img src="/imgicon.png" />
+    </div>
   </div>
 </template>
 
-<style>
-.backimg-change {
+<style scoped>
+.backimg-change-container {
   position: fixed;
   bottom: 5vh;
   right: 5vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.backimg-change-description {
+  width: 50vw;
+  color: #fff;
+  font-size: 15px;
+  margin-right: 20px;
+  padding-bottom: 10px;
+  word-break: keep-all;
+  text-align: right;
+  /* animation: move 1.5s linear infinite; */
+}
+
+.backimg-change {
   background-color: #fff;
   padding: 10px;
   border-radius: 5px;
@@ -38,11 +58,11 @@
 <script>
 export default {
   props: {
-    backMove: Function,
+    backimgMoveUp: Function,
     backimgChange: Function,
   },
   created() {
-    this.backMove(0);
+    this.backimgMoveUp(0);
   },
 }
 </script>

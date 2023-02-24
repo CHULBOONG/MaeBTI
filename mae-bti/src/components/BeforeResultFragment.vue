@@ -1,11 +1,11 @@
 <template>
     <div class="blinder" @click="closeFragment" ref="blinder">
         <img class="bgimg" src="/mushroombg.png" />
-        <div style="z-index: 10; text-align: center;">click anywhere to see result</div>
+        <div style="z-index: 10; text-align: center; word-break: keep-all;">결과를 보려면 아무데나 누르세요</div>
     </div>
 </template>
 
-<style>
+<style scoped>
 .blinder {
     font-size: 30px;
     position: fixed;
@@ -19,7 +19,7 @@
     align-items: center;
     animation: blink 1s infinite steps(1);
     background-color: #b7d468;
-    z-index: 999;
+    z-index: 100;
 }
 
 /* blink text shadow with keyframes */
@@ -27,13 +27,8 @@
     0% {
         -webkit-text-stroke: #fff 1px;
     }
-
     50% {
         -webkit-text-stroke: var(--primary-yelow) 1px;
-    }
-
-    100% {
-        -webkit-text-stroke: #fff 1px;
     }
 }
 

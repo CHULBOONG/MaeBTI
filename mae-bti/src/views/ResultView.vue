@@ -8,11 +8,11 @@
     </div>
     <div class="white-shadow">Text Area</div>
     <!-- <div class="white-shadow" style="text-align: center;">{{ getJobProperty() }}</div> -->
-    <RouterLink to="/">go to Main View</RouterLink>
+    <RouterLink to="/">메인으로가기</RouterLink>
     <RouterLink to="/jobs">go to Jobs View</RouterLink>
 </template>
 
-<style>
+<style scoped>
 .image-area {
     width: 100vw;
     height: 40vh;

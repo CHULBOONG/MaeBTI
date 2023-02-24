@@ -1,5 +1,5 @@
 <template>
-  <RouterView :backMove="backMove" :backimgChange="backimgChange" />
+  <RouterView :backimgMoveUp="backimgMoveUp" :backimgChange="backimgChange" />
   <div class="imgcontainer">
     <img class="backimg" :class="backimgMove()" :src="backimgList[currentBackimgIndex]" :style="objectPositionValue"
       alt="eos" />
@@ -11,7 +11,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 @font-face {
   font-family: 'Maplestory Bold';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
@@ -41,20 +41,6 @@
   animation: move 10s linear infinite;
 }
 
-@keyframes move {
-  0% {
-    transform: translateX(-1%);
-  }
-
-  50% {
-    transform: translateX(1%);
-  }
-
-  100% {
-    transform: translateX(-1%);
-  }
-}
-
 .dark-overlay {
   position: absolute;
   width: 100vw;
@@ -74,7 +60,7 @@
   color: #000;
   font-size: 20px;
   font-family: sans-serif;
-  z-index: 100;
+  z-index: 9999;
 }
 
 .loading-spin {
@@ -127,7 +113,7 @@ export default {
     });
   },
   methods: {
-    backMove(percent) {
+    backimgMoveUp(percent) {
       this.objectPositionValue = { objectPosition: '0 ' + (100 - percent) + '%' }
     },
     backimgMove() {
