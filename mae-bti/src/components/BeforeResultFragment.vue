@@ -19,6 +19,7 @@
     align-items: center;
     animation: blink 1s infinite steps(1);
     background-color: #b7d468;
+    z-index: 999;
 }
 
 /* blink text shadow with keyframes */

@@ -3,21 +3,31 @@
     <h1>Result View</h1>
     <div class="white-shadow">Result Area</div>
     <div class="white-shadow">{{ $route.query.job }}</div>
-    <div class="image-area">이미지 영역</div>
-    <div class="white-shadow">텍스트 영역</div>
-    <div class="white-shadow" style="text-align: center;">{{ getJobProperty() }}</div>
+    <div class="image-area">
+        <img :src="'/job_illust/' + $route.query.job + '.png'" />
+    </div>
+    <div class="white-shadow">Text Area</div>
+    <!-- <div class="white-shadow" style="text-align: center;">{{ getJobProperty() }}</div> -->
     <RouterLink to="/">go to Main View</RouterLink>
     <RouterLink to="/jobs">go to Jobs View</RouterLink>
 </template>
 
 <style>
-.image-area{
-    width: 200px;
-    height: 200px;
-    background-color: #fff;
-    box-shadow: 0px 0px 5px #999;
-    text-align: center;
+.image-area {
+    width: 100vw;
+    height: 40vh;
+    max-height: 300px;
+    padding: 20px 0 20px 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 30%), rgba(255, 255, 255, 90%), rgba(0, 0, 0, 30%));
     margin: 5px;
+}
+
+.image-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    /* png image shadow */
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
 }
 </style>
 
