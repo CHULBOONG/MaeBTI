@@ -14,13 +14,6 @@ body {
   user-select: none;
 }
 
-a {
-  text-decoration: underline;
-  color: var(--primary-green);
-  transition: 0.4s;
-  font-size: 20px;
-}
-
 h1 {
   color: white;
   text-shadow: 0 0 10px #000;
@@ -30,9 +23,36 @@ h1 {
   --primary-green: #00BD7E;
   --primary-blue: #00A1FF;
   --primary-red: #FF0000;
+  --primary-orange: #F48D09;
+  --primary-yellow: #ffdc4c;
 }
 
 .white-shadow {
   color: white;
   text-shadow: 0 0 10px #000;
+}
+
+a {
+  width: 80vw;
+  max-width: 240px;
+  height: 15vw;
+  max-height: 50px;
+  background-color: var(--primary-green);
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px;
+  border: #fff solid 1px;
+  box-shadow: 0px 0px 5px #999;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a:hover {
+      border: var(--primary-blue) solid 1px;
+      box-shadow: 0px 0px 5px var(--primary-blue);
+      cursor: pointer;
+  }
 }

@@ -1,6 +1,9 @@
 <template>
-  <RouterView :backMove="backMove" />
-  <img class="backimg" src="/eostower.webp" :style="objectPositionValue" alt="eos" />
+  <RouterView :backMove="backMove" :backimgChange="backimgChange" />
+  <div class="imgcontainer">
+    <img class="backimg" :class="backimgMove()" :src="backimgList[currentBackimgIndex]" :style="objectPositionValue"
+      alt="eos" />
+  </div>
   <div class="dark-overlay"></div>
   <div v-if="block" class="loading">
     loading...
@@ -14,6 +17,14 @@
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
 }
 
+.imgcontainer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
 .backimg {
   position: absolute;
   width: 100vw;
@@ -23,6 +34,25 @@
   filter: blur(7px);
   transition: 0.3s;
   opacity: 0.3;
+  scale: 1.01;
+}
+
+.backimg-move {
+  animation: move 10s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-1%);
+  }
+
+  50% {
+    transform: translateX(1%);
+  }
+
+  100% {
+    transform: translateX(-1%);
+  }
 }
 
 .dark-overlay {
@@ -44,7 +74,7 @@
   color: #000;
   font-size: 20px;
   font-family: sans-serif;
-  z-index: 1;
+  z-index: 100;
 }
 
 .loading-spin {
@@ -73,15 +103,42 @@ export default {
     return {
       objectPositionValue: { objectPosition: '0 100%' },
       block: true,
+      backimgList: [
+        '/eostower.webp',
+        '/pathoftime.webp',
+        '/mureung.webp',
+      ],
+      pubimgList: [
+        '/imgicon.png',
+        '/mushroombg.png',
+      ],
+      currentBackimgIndex: 0,
     }
   },
   mounted() {
     window.addEventListener('load', () => { this.block = false });
+    this.backimgList.forEach((img) => {
+      const image = new Image();
+      image.src = img;
+    });
+    this.pubimgList.forEach((img) => {
+      const image = new Image();
+      image.src = img;
+    });
   },
   methods: {
     backMove(percent) {
       this.objectPositionValue = { objectPosition: '0 ' + (100 - percent) + '%' }
-      console.log(this.objectPositionValue);
+    },
+    backimgMove() {
+      if (this.$route.path === '/') {
+        return 'backimg-move'
+      } else {
+        return ''
+      }
+    },
+    backimgChange() {
+      this.currentBackimgIndex = (this.currentBackimgIndex + 1) % this.backimgList.length;
     }
   },
 }
