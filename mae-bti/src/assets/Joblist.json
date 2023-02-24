@@ -10,7 +10,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "Soso",
         "isComDealer": "Good",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "Good",
+        "hasPartyUtil": "Bad",
+        "hasOwnBind": "VeryGood",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "VeryBad",
+        "isAttackRangeShort": "Soso",
+        "isNewbieGood": "VeryGood",
+        "isFieldSkillEasy": "VeryGood",
+        "isEasyDeal": "Good"
     },
     {
         "jobname": "비숍",
@@ -23,7 +32,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "VeryGood",
         "isComDealer": "Bad",
-        "isUltDealer": "Soso"
+        "isUltDealer": "Soso",
+        "UseLinkedskill": "VeryBad",
+        "hasPartyUtil": "VeryGood",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "Bad",
+        "isAttackRangeShort": "Good",
+        "isNewbieGood": "Good",
+        "isFieldSkillEasy": "VeryGood",
+        "isEasyDeal": "VeryGood"
     },
     {
         "jobname": "썬콜",
@@ -36,7 +54,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "VeryGood",
         "isComDealer": "Good",
-        "isUltDealer": "VeryGood"
+        "isUltDealer": "VeryGood",
+        "UseLinkedskill": "Bad",
+        "hasPartyUtil": "Soso",
+        "hasOwnBind": "VeryGood",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "Bad",
+        "isAttackRangeShort": "Good",
+        "isNewbieGood": "Good",
+        "isFieldSkillEasy": "VeryGood",
+        "isEasyDeal": "VeryGood"
     },
     {
         "jobname": "키네시스",
@@ -49,7 +76,16 @@
         "hasTripleJump": "Good",
         "hasTeleport": "Bad",
         "isComDealer": "Good",
-        "isUltDealer": "Soso"
+        "isUltDealer": "Soso",
+        "UseLinkedskill": "Bad",
+        "hasPartyUtil": "Bad",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "Good",
+        "isAttackRangeShort": "VeryGood",
+        "isNewbieGood": "VeryGood",
+        "isFieldSkillEasy": "VeryGood",
+        "isEasyDeal": "Bad"
     },
     {
         "jobname": "히어로",
@@ -62,7 +98,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "VeryBad",
         "isComDealer": "VeryGood",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "Bad",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "Bad",
+        "isAttackRangeShort": "Soso",
+        "isNewbieGood": "Soso",
+        "isFieldSkillEasy": "Good",
+        "isEasyDeal": "VeryGood"
     },
     {
         "jobname": "팔라딘",
@@ -75,7 +120,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "VeryBad",
         "isComDealer": "VeryBad",
-        "isUltDealer": "VeryGood"
+        "isUltDealer": "VeryGood",
+        "UseLinkedskill": "VeryBad",
+        "hasPartyUtil": "VeryGood",
+        "hasOwnBind": "VeryGood",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "Bad",
+        "isAttackRangeShort": "Bad",
+        "isNewbieGood": "VeryGood",
+        "isFieldSkillEasy": "Bad",
+        "isEasyDeal": "VeryGood"
     },
     {
         "jobname": "다크나이트",
@@ -88,7 +142,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "VeryBad",
         "isComDealer": "Good",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "Bad",
+        "hasPartyUtil": "Bad",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "Bad",
+        "isAttackRangeShort": "Bad",
+        "isNewbieGood": "Soso",
+        "isFieldSkillEasy": "VeryBad",
+        "isEasyDeal": "VeryGood"
     },
     {
         "jobname": "소울마스터",
@@ -101,7 +164,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "Soso",
         "isComDealer": "Soso",
-        "isUltDealer": "Soso"
+        "isUltDealer": "Soso",
+        "UseLinkedskill": "Bad",
+        "hasPartyUtil": "Good",
+        "hasOwnBind": "VeryGood",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "Bad",
+        "isAttackRangeShort": "Soso",
+        "isNewbieGood": "VeryGood",
+        "isFieldSkillEasy": "Good",
+        "isEasyDeal": "Good"
     },
     {
         "jobname": "미하일",
@@ -114,7 +186,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "VeryBad",
         "isComDealer": "Bad",
-        "isUltDealer": "Soso"
+        "isUltDealer": "Soso",
+        "UseLinkedskill": "Bad",
+        "hasPartyUtil": "VeryGood",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "VeryGood",
+        "isAttackRangeShort": "VeryGood",
+        "isNewbieGood": "Good",
+        "isFieldSkillEasy": "Good",
+        "isEasyDeal": "Good"
     },
     {
         "jobname": "블래스터",
@@ -127,7 +208,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "VeryBad",
         "isComDealer": "VeryGood",
-        "isUltDealer": "Soso"
+        "isUltDealer": "Soso",
+        "UseLinkedskill": "VeryGood",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "Soso",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "Good",
+        "isAttackRangeShort": "VeryBad",
+        "isNewbieGood": "Bad",
+        "isFieldSkillEasy": "VeryBad",
+        "isEasyDeal": "Soso"
     },
     {
         "jobname": "데몬슬레이어",
@@ -140,7 +230,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "Soso",
         "isComDealer": "Bad",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "Good",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "VeryGood",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "Good",
+        "isAttackRangeShort": "Soso",
+        "isNewbieGood": "Bad",
+        "isFieldSkillEasy": "Good",
+        "isEasyDeal": "Good"
     },
     {
         "jobname": "데몬어벤져",
@@ -153,7 +252,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "VeryBad",
         "isComDealer": "VeryGood",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "Soso",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "VeryGood",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "Bad",
+        "isAttackRangeShort": "Bad",
+        "isNewbieGood": "Good",
+        "isFieldSkillEasy": "Good",
+        "isEasyDeal": "VeryGood"
     },
     {
         "jobname": "아란",
@@ -166,7 +274,16 @@
         "hasTripleJump": "Good",
         "hasTeleport": "VeryBad",
         "isComDealer": "Soso",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "VeryGood",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "VeryGood",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "Good",
+        "isAttackRangeShort": "VeryBad",
+        "isNewbieGood": "Soso",
+        "isFieldSkillEasy": "VeryBad",
+        "isEasyDeal": "Soso"
     },
     {
         "jobname": "카이저",
@@ -179,7 +296,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "VeryBad",
         "isComDealer": "Soso",
-        "isUltDealer": "VeryBad"
+        "isUltDealer": "VeryBad",
+        "UseLinkedskill": "Good",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "VeryGood",
+        "isAttackRangeShort": "Bad",
+        "isNewbieGood": "Soso",
+        "isFieldSkillEasy": "Soso",
+        "isEasyDeal": "Good"
     },
     {
         "jobname": "제로",
@@ -192,7 +318,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "Soso",
         "isComDealer": "Soso",
-        "isUltDealer": "Bad"
+        "isUltDealer": "Bad",
+        "UseLinkedskill": "Good",
+        "hasPartyUtil": "VeryGood",
+        "hasOwnBind": "VeryGood",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "Good",
+        "isAttackRangeShort": "Good",
+        "isNewbieGood": "Bad",
+        "isFieldSkillEasy": "Bad",
+        "isEasyDeal": "Soso"
     },
     {
         "jobname": "불독",
@@ -205,7 +340,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "VeryGood",
         "isComDealer": "VeryGood",
-        "isUltDealer": "Bad"
+        "isUltDealer": "Bad",
+        "UseLinkedskill": "Bad",
+        "hasPartyUtil": "Bad",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "Bad",
+        "isAttackRangeShort": "VeryGood",
+        "isNewbieGood": "Bad",
+        "isFieldSkillEasy": "VeryGood",
+        "isEasyDeal": "Soso"
     },
     {
         "jobname": "플레임위자드",
@@ -218,7 +362,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "Soso",
         "isComDealer": "Bad",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "VeryBad",
+        "hasPartyUtil": "VeryGood",
+        "hasOwnBind": "VeryGood",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "Soso",
+        "isAttackRangeShort": "Good",
+        "isNewbieGood": "Soso",
+        "isFieldSkillEasy": "Good",
+        "isEasyDeal": "Good"
     },
     {
         "jobname": "배틀메이지",
@@ -231,7 +384,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "VeryGood",
         "isComDealer": "Soso",
-        "isUltDealer": "Bad"
+        "isUltDealer": "Bad",
+        "UseLinkedskill": "Bad",
+        "hasPartyUtil": "VeryGood",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "VeryGood",
+        "isAttackRangeShort": "Bad",
+        "isNewbieGood": "Soso",
+        "isFieldSkillEasy": "Bad",
+        "isEasyDeal": "Soso"
     },
     {
         "jobname": "에반",
@@ -244,7 +406,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "VeryGood",
         "isComDealer": "Good",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "Soso",
+        "hasPartyUtil": "Soso",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "Good",
+        "isAttackRangeShort": "Good",
+        "isNewbieGood": "Bad",
+        "isFieldSkillEasy": "Soso",
+        "isEasyDeal": "Bad"
     },
     {
         "jobname": "루미너스",
@@ -257,7 +428,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "VeryGood",
         "isComDealer": "Good",
-        "isUltDealer": "VeryBad"
+        "isUltDealer": "VeryBad",
+        "UseLinkedskill": "VeryBad",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "VeryGood",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "Good",
+        "isAttackRangeShort": "VeryGood",
+        "isNewbieGood": "Good",
+        "isFieldSkillEasy": "VeryGood",
+        "isEasyDeal": "Bad"
     },
     {
         "jobname": "일리움",
@@ -270,7 +450,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "VeryGood",
         "isComDealer": "Soso",
-        "isUltDealer": "Soso"
+        "isUltDealer": "Soso",
+        "UseLinkedskill": "Soso",
+        "hasPartyUtil": "Good",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "VeryGood",
+        "isAttackRangeShort": "Good",
+        "isNewbieGood": "Bad",
+        "isFieldSkillEasy": "VeryGood",
+        "isEasyDeal": "Good"
     },
     {
         "jobname": "라라",
@@ -283,7 +472,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "Soso",
         "isComDealer": "Soso",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "VeryBad",
+        "hasPartyUtil": "Good",
+        "hasOwnBind": "VeryGood",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "Bad",
+        "isAttackRangeShort": "VeryGood",
+        "isNewbieGood": "Good",
+        "isFieldSkillEasy": "VeryGood",
+        "isEasyDeal": "VeryGood"
     },
     {
         "jobname": "보우마스터",
@@ -296,7 +494,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "Soso",
         "isComDealer": "Soso",
-        "isUltDealer": "Soso"
+        "isUltDealer": "Soso",
+        "UseLinkedskill": "VeryBad",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "Soso",
+        "isAttackRangeShort": "Bad",
+        "isNewbieGood": "Bad",
+        "isFieldSkillEasy": "Bad",
+        "isEasyDeal": "Good"
     },
     {
         "jobname": "신궁",
@@ -309,7 +516,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "Soso",
         "isComDealer": "Soso",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "VeryBad",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "Good",
+        "isAttackRangeShort": "Bad",
+        "isNewbieGood": "Soso",
+        "isFieldSkillEasy": "Bad",
+        "isEasyDeal": "VeryGood"
     },
     {
         "jobname": "패스파인더",
@@ -322,7 +538,16 @@
         "hasTripleJump": "Bad",
         "hasTeleport": "Soso",
         "isComDealer": "Good",
-        "isUltDealer": "Bad"
+        "isUltDealer": "Bad",
+        "UseLinkedskill": "Soso",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "VeryBad",
+        "isAttackRangeShort": "Good",
+        "isNewbieGood": "Good",
+        "isFieldSkillEasy": "VeryGood",
+        "isEasyDeal": "Good"
     },
     {
         "jobname": "윈드브레이커",
@@ -335,7 +560,16 @@
         "hasTripleJump": "Bad",
         "hasTeleport": "VeryBad",
         "isComDealer": "Soso",
-        "isUltDealer": "VeryBad"
+        "isUltDealer": "VeryBad",
+        "UseLinkedskill": "VeryBad",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "Soso",
+        "isAttackRangeShort": "Soso",
+        "isNewbieGood": "Soso",
+        "isFieldSkillEasy": "Soso",
+        "isEasyDeal": "Good"
     },
     {
         "jobname": "와일드헌터",
@@ -348,7 +582,16 @@
         "hasTripleJump": "VeryGood",
         "hasTeleport": "VeryBad",
         "isComDealer": "Soso",
-        "isUltDealer": "Soso"
+        "isUltDealer": "Soso",
+        "UseLinkedskill": "Bad",
+        "hasPartyUtil": "Good",
+        "hasOwnBind": "VeryGood",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "VeryGood",
+        "isAttackRangeShort": "Bad",
+        "isNewbieGood": "Bad",
+        "isFieldSkillEasy": "Bad",
+        "isEasyDeal": "Good"
     },
     {
         "jobname": "메르세데스",
@@ -361,7 +604,16 @@
         "hasTripleJump": "Bad",
         "hasTeleport": "Soso",
         "isComDealer": "Good",
-        "isUltDealer": "VeryGood"
+        "isUltDealer": "VeryGood",
+        "UseLinkedskill": "VeryGood",
+        "hasPartyUtil": "Good",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "Good",
+        "isAttackRangeShort": "Soso",
+        "isNewbieGood": "Bad",
+        "isFieldSkillEasy": "Soso",
+        "isEasyDeal": "VeryGood"
     },
     {
         "jobname": "카인",
@@ -374,7 +626,16 @@
         "hasTripleJump": "Soso",
         "hasTeleport": "VeryBad",
         "isComDealer": "Soso",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "Soso",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "Good",
+        "isAttackRangeShort": "Soso",
+        "isNewbieGood": "Good",
+        "isFieldSkillEasy": "Soso",
+        "isEasyDeal": "VeryGood"
     },
     {
         "jobname": "나이트로드",
@@ -387,7 +648,16 @@
         "hasTripleJump": "VeryGood",
         "hasTeleport": "VeryBad",
         "isComDealer": "Soso",
-        "isUltDealer": "VeryGood"
+        "isUltDealer": "VeryGood",
+        "UseLinkedskill": "VeryBad",
+        "hasPartyUtil": "Bad",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "VeryBad",
+        "isAttackRangeShort": "Soso",
+        "isNewbieGood": "Bad",
+        "isFieldSkillEasy": "VeryGood",
+        "isEasyDeal": "Soso"
     },
     {
         "jobname": "섀도어",
@@ -400,7 +670,16 @@
         "hasTripleJump": "VeryGood",
         "hasTeleport": "Soso",
         "isComDealer": "VeryGood",
-        "isUltDealer": "Bad"
+        "isUltDealer": "Bad",
+        "UseLinkedskill": "Bad",
+        "hasPartyUtil": "Soso",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "Bad",
+        "isAttackRangeShort": "Good",
+        "isNewbieGood": "Soso",
+        "isFieldSkillEasy": "Good",
+        "isEasyDeal": "Good"
     },
     {
         "jobname": "듀얼블레이드",
@@ -413,7 +692,16 @@
         "hasTripleJump": "VeryGood",
         "hasTeleport": "VeryBad",
         "isComDealer": "Soso",
-        "isUltDealer": "Soso"
+        "isUltDealer": "Soso",
+        "UseLinkedskill": "VeryBad",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "VeryBad",
+        "isAttackRangeShort": "VeryGood",
+        "isNewbieGood": "VeryGood",
+        "isFieldSkillEasy": "Soso",
+        "isEasyDeal": "VeryGood"
     },
     {
         "jobname": "나이트워커",
@@ -426,7 +714,16 @@
         "hasTripleJump": "VeryGood",
         "hasTeleport": "Soso",
         "isComDealer": "VeryGood",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "Soso",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "VeryGood",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "Soso",
+        "isAttackRangeShort": "Good",
+        "isNewbieGood": "Soso",
+        "isFieldSkillEasy": "Soso",
+        "isEasyDeal": "Good"
     },
     {
         "jobname": "제논",
@@ -439,7 +736,16 @@
         "hasTripleJump": "VeryGood",
         "hasTeleport": "VeryBad",
         "isComDealer": "Bad",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "Good",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "VeryGood",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "VeryGood",
+        "isAttackRangeShort": "Good",
+        "isNewbieGood": "VeryBad",
+        "isFieldSkillEasy": "Bad",
+        "isEasyDeal": "Soso"
     },
     {
         "jobname": "팬텀",
@@ -452,7 +758,16 @@
         "hasTripleJump": "VeryGood",
         "hasTeleport": "Soso",
         "isComDealer": "VeryBad",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "Bad",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "Soso",
+        "isAttackRangeShort": "VeryBad",
+        "isNewbieGood": "VeryBad",
+        "isFieldSkillEasy": "VeryBad",
+        "isEasyDeal": "Good"
     },
     {
         "jobname": "카데나",
@@ -465,7 +780,16 @@
         "hasTripleJump": "VeryGood",
         "hasTeleport": "VeryBad",
         "isComDealer": "VeryGood",
-        "isUltDealer": "Bad"
+        "isUltDealer": "Bad",
+        "UseLinkedskill": "VeryGood",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "Good",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "VeryGood",
+        "isAttackRangeShort": "Bad",
+        "isNewbieGood": "Bad",
+        "isFieldSkillEasy": "Bad",
+        "isEasyDeal": "Soso"
     },
     {
         "jobname": "칼리",
@@ -478,7 +802,16 @@
         "hasTripleJump": "VeryGood",
         "hasTeleport": "Soso",
         "isComDealer": "Soso",
-        "isUltDealer": "Bad"
+        "isUltDealer": "Bad",
+        "UseLinkedskill": "VeryGood",
+        "hasPartyUtil": "Bad",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "VeryGood",
+        "isAttackRangeShort": "VeryGood",
+        "isNewbieGood": "Good",
+        "isFieldSkillEasy": "VeryGood",
+        "isEasyDeal": "Good"
     },
     {
         "jobname": "호영",
@@ -491,7 +824,16 @@
         "hasTripleJump": "VeryGood",
         "hasTeleport": "VeryBad",
         "isComDealer": "Good",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "VeryGood",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "VeryGood",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "Bad",
+        "isAttackRangeShort": "VeryGood",
+        "isNewbieGood": "Good",
+        "isFieldSkillEasy": "Good",
+        "isEasyDeal": "VeryGood"
     },
     {
         "jobname": "바이퍼",
@@ -504,7 +846,16 @@
         "hasTripleJump": "VeryGood",
         "hasTeleport": "VeryBad",
         "isComDealer": "Soso",
-        "isUltDealer": "Soso"
+        "isUltDealer": "Soso",
+        "UseLinkedskill": "VeryBad",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "Bad",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "VeryGood",
+        "isAttackRangeShort": "VeryGood",
+        "isNewbieGood": "Good",
+        "isFieldSkillEasy": "VeryGood",
+        "isEasyDeal": "VeryGood"
     },
     {
         "jobname": "캡틴",
@@ -517,7 +868,16 @@
         "hasTripleJump": "VeryGood",
         "hasTeleport": "VeryBad",
         "isComDealer": "Soso",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "Bad",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "VeryGood",
+        "isAttackRangeShort": "Good",
+        "isNewbieGood": "Soso",
+        "isFieldSkillEasy": "Good",
+        "isEasyDeal": "VeryGood"
     },
     {
         "jobname": "캐논슈터",
@@ -530,7 +890,16 @@
         "hasTripleJump": "VeryGood",
         "hasTeleport": "VeryBad",
         "isComDealer": "Good",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "Bad",
+        "hasPartyUtil": "Bad",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "Bad",
+        "isAttackRangeShort": "Good",
+        "isNewbieGood": "Soso",
+        "isFieldSkillEasy": "VeryGood",
+        "isEasyDeal": "VeryGood"
     },
     {
         "jobname": "스트라이커",
@@ -543,7 +912,16 @@
         "hasTripleJump": "Soso",
         "hasTeleport": "VeryBad",
         "isComDealer": "Soso",
-        "isUltDealer": "Bad"
+        "isUltDealer": "Bad",
+        "UseLinkedskill": "VeryGood",
+        "hasPartyUtil": "VeryBad",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "VeryGood",
+        "isAttackRangeShort": "Good",
+        "isNewbieGood": "Soso",
+        "isFieldSkillEasy": "Good",
+        "isEasyDeal": "Good"
     },
     {
         "jobname": "메카닉",
@@ -556,7 +934,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "Soso",
         "isComDealer": "Bad",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "VeryBad",
+        "hasPartyUtil": "VeryGood",
+        "hasOwnBind": "VeryBad",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "VeryGood",
+        "isAttackRangeShort": "Soso",
+        "isNewbieGood": "VeryBad",
+        "isFieldSkillEasy": "Soso",
+        "isEasyDeal": "VeryGood"
     },
     {
         "jobname": "은월",
@@ -569,7 +956,16 @@
         "hasTripleJump": "VeryBad",
         "hasTeleport": "Soso",
         "isComDealer": "Good",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "Bad",
+        "hasPartyUtil": "VeryGood",
+        "hasOwnBind": "VeryGood",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "Good",
+        "isAttackRangeShort": "Soso",
+        "isNewbieGood": "Bad",
+        "isFieldSkillEasy": "Soso",
+        "isEasyDeal": "VeryGood"
     },
     {
         "jobname": "엔젤릭버스터",
@@ -582,7 +978,16 @@
         "hasTripleJump": "VeryGood",
         "hasTeleport": "VeryBad",
         "isComDealer": "Soso",
-        "isUltDealer": "Good"
+        "isUltDealer": "Good",
+        "UseLinkedskill": "VeryBad",
+        "hasPartyUtil": "Bad",
+        "hasOwnBind": "Bad",
+        "hasKeyDown": "VeryBad",
+        "isUnique": "Soso",
+        "isAttackRangeShort": "Good",
+        "isNewbieGood": "Soso",
+        "isFieldSkillEasy": "VeryGood",
+        "isEasyDeal": "Good"
     },
     {
         "jobname": "아크",
@@ -595,6 +1000,15 @@
         "hasTripleJump": "Bad",
         "hasTeleport": "VeryBad",
         "isComDealer": "Soso",
-        "isUltDealer": "VeryGood"
+        "isUltDealer": "VeryGood",
+        "UseLinkedskill": "VeryGood",
+        "hasPartyUtil": "Good",
+        "hasOwnBind": "VeryGood",
+        "hasKeyDown": "VeryGood",
+        "isUnique": "Bad",
+        "isAttackRangeShort": "Soso",
+        "isNewbieGood": "Good",
+        "isFieldSkillEasy": "Soso",
+        "isEasyDeal": "VeryGood"
     }
 ]

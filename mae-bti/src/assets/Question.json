@@ -38,5 +38,41 @@
     {
         "question": "나는 단숨에 강한 데미지를 넣는게 좋다",
         "sortation": "isUltDealer"
+    },
+    {
+        "question": "연계 스킬 사용을 좋아한다",
+        "sortation": "UseLinkedskill"
+    },
+    {
+        "question": "자기버프보다 파티원을 강화해주는 스킬이 있으면 좋겠다",
+        "sortation": "hasPartyUtil"
+    },
+    {
+        "question": "자체 바인드가 있으면 좋겠다",
+        "sortation": "hasOwnBind"
+    },
+    {
+        "question": "강력한 키다운 공격 스킬이 있으면 좋다",
+        "sortation": "hasKeyDown"
+    },
+    {
+        "question": "내 캐릭터 직업을 다른 사람들이 잘 안했으면 좋겠다",
+        "sortation": "isUnique"
+    },
+    {
+        "question": "근거리 딜러(근거리에서 공격하는 직업)가 좋다",
+        "sortation": "isAttackRangeShort"
+    },
+    {
+        "question": "카루타, 스데미까지 잡기 편한 직업이 좋다",
+        "sortation": "isNewbieGood"
+    },
+    {
+        "question": "사냥마릿수 상관없이 사냥 스킬 원킬컷이 낮은 직업이 좋다",
+        "sortation": "isFieldSkillEasy"
+    },
+    {
+        "question": "보스 딜링 난이도가 쉬운 직업이 좋다",
+        "sortation": "isEasyDeal"
     }
 ]
