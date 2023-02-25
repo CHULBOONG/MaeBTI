@@ -88,11 +88,12 @@
         box-shadow: 0px 0px 5px var(--primary-blue);
         cursor: pointer;
     }
-}
 
-.button-bottom:hover {
-    border: #fff solid 1px;
-    cursor: pointer;
+    .button-bottom:hover {
+        border: #fff solid 1px;
+        cursor: pointer;
+    }
+
 }
 
 .button-bottom-disabled:hover {

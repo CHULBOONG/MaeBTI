@@ -1,5 +1,6 @@
 <template>
-  <h1>Main View</h1>
+  <h1 style="margin-bottom: 0;">M(메)-BTI</h1>
+  <h5 style="color: #ddd;">-Maplestory Best Type Indicator-</h5>
   <RouterLink class="button-blink" to="/inspect">내 직업 성향 알아보러 가기</RouterLink>
   <RouterLink to="/jobs">go to Jobs View</RouterLink>
   <div class="backimg-change-container">
