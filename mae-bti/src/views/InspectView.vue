@@ -9,12 +9,14 @@
   </Question>
   <RouterLink v-if="resultVisible" class="button-blink" :to="{ name: 'result', query: { job: jobRank[0] } }">결과 보기
   </RouterLink>
-  <a v-else v-if="incompleteChecker" class="incomplete button-blink" @click="toIncompleteQuestion">응답하지않은 문항으로 가기</a>
+  <a v-else v-if="incompleteChecker" class="incomplete button-blink" @click="toIncompleteQuestion"
+    ref="incompleteButton">응답하지않은 문항으로 가기</a>
 </template>
 
 <style scoped>
 .incomplete {
   background-color: var(--primary-red);
+  transition: 0.1s;
 }
 
 /* .incomplete-disabled {
@@ -119,9 +121,16 @@ export default {
       this.resultVisible = true;
     },
     toIncompleteQuestion() {
-      if (this.incompleteChecker) {
-        this.currentIndex = this.storeResponse.findIndex(response => response === undefined);
-        this.incompleteChecker = false;
+      let temp = this.currentIndex;
+      this.currentIndex = this.storeResponse.findIndex(response => response === undefined);
+      this.incompleteCheckMethod();
+      if (temp === this.currentIndex) {
+        const values = ['5px', '25px', '-15px', '25px', '-15px', '5px'];
+        for (let i = 0; i < values.length; i++) {
+          setTimeout(() => {
+            this.$refs.incompleteButton.style.marginLeft = values[i];
+          }, (i + 1) * 50);
+        }
       }
     },
     incompleteCheckMethod() {
