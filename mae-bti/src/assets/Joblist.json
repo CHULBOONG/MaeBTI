@@ -44,7 +44,7 @@
         "isEasyDeal": "VeryGood"
     },
     {
-        "jobname": "썬콜",
+        "jobname": "아크메이지(썬,콜)",
         "isUtilGood": "Good",
         "isCoreEasy": "Good",
         "isDamageGood": "Good",
@@ -330,7 +330,7 @@
         "isEasyDeal": "Soso"
     },
     {
-        "jobname": "불독",
+        "jobname": "아크메이지(불,독)",
         "isUtilGood": "Bad",
         "isCoreEasy": "VeryBad",
         "isDamageGood": "VeryGood",
