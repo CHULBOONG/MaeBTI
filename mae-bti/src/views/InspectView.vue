@@ -162,7 +162,7 @@ export default {
     },
     nextButtonBlink() {
       //currentResponsedAndIncompleteCheckerFalse
-      return (this.storeResponse[this.currentIndex] !== undefined) && (this.incompleteChecker === false) && (this.currentIndex < this.questionLength - 1) ? true : false;
+      return (this.storeResponse[this.currentIndex] !== undefined) && (this.incompleteChecker === false) && (this.currentIndex < this.questionLength - 1) && (this.resultVisible === false) ? true : false;
     }
   }
 }
