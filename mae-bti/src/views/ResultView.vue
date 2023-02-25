@@ -4,7 +4,7 @@
     <div class="white-shadow">{{ getJobAlias() }}</div>
     <div class="white-shadow" style="font-size: 20px;">{{ $route.query.job }}</div>
     <div class="image-area">
-        <img :src="'/job_illust/' + $route.query.job + '.png'" />
+        <img :src="'/job_illust_/' + $route.query.job + '.png'" />
     </div>
     <div class="white-shadow">ㅤ</div>
     <!-- <div class="white-shadow" style="text-align: center;">{{ getJobProperty() }}</div> -->
