@@ -55,7 +55,7 @@ export default {
             content: {
                 title: this.getJobAlias() + ' ' + this.$route.query.job,
                 description: '나에게 가장 잘 맞는 직업은 무엇일까?',
-                imageUrl: 'https://mae-bti.netlify.app/job_illust/' + this.$route.query.job + '.png',
+                imageUrl: 'https://mae-bti.netlify.app/job_illust_/' + this.$route.query.job + '.png',
                 link: {
                     mobileWebUrl: 'https://mae-bti.netlify.app/',
                     webUrl: 'https://mae-bti.netlify.app/',
