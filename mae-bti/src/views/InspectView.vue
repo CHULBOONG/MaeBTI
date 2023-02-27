@@ -7,7 +7,7 @@
     :next-question="nextQuestion" :prev-question="prevQuestion" :response-question="responseQuestion"
     :selected-class="selectedClass" :next-button-blink="nextButtonBlink">
   </Question>
-  <RouterLink v-if="resultVisible" @click="resultLoading=false" class="button-blink" :to="{ name: 'result', query: { job: jobRank[0] } }">결과 보기
+  <RouterLink v-if="resultVisible" @click="resultLoading=true" class="button-blink" :to="{ name: 'result', query: { job: jobRank[0] } }">결과 보기
   </RouterLink>
   <a v-else v-if="incompleteChecker" class="incomplete button-blink" @click="toIncompleteQuestion"
     ref="incompleteButton">응답하지않은 문항으로 가기</a>
