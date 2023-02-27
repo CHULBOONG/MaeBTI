@@ -49,6 +49,7 @@
   filter: invert(1);
 }
 
+/* PC에서만 hover 효과 적용 */
 @media (hover: hover) and (pointer: fine) {
   .backimg-change:hover {
     background-color: var(--primary-yellow)
@@ -58,11 +59,13 @@
 
 <script>
 export default {
+  // App.vue에서 props로 넘겨준 함수를 사용할 수 있음
   props: {
     backimgMoveUp: Function,
     backimgChange: Function,
   },
   created() {
+    // MainView가 생성될 때마다 배경의 위치 초기화
     this.backimgMoveUp(0);
   },
 }

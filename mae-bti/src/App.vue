@@ -5,9 +5,13 @@
       alt="eos" />
   </div>
   <div class="dark-overlay"></div>
-  <div v-if="block" class="loading">
+  <div v-if="block" style="opacity: 1;" class="loading">
     loading...
-    <div class="loading-spin"></div>
+    <div class="loadingio-spinner-eclipse-vy6k4to2bf">
+      <div class="ldio-b7g6avxl4hq">
+        <div></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -48,61 +52,35 @@
   z-index: -2;
   background-color: #000;
 }
-
-.loading {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  color: #000;
-  font-size: 20px;
-  font-family: sans-serif;
-  z-index: 9999;
-}
-
-.loading-spin {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border-left: 20px solid #F48D09;
-  border-bottom: 20px solid #F7AF52;
-  border-right: 20px solid #FAD19C;
-  border-top: 20px solid #FDF3E6;
-  border-radius: 50%;
-  z-index: 2;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
 </style>
 
 <script>
 export default {
   data() {
     return {
+      // 2d 오브젝트의 위치를 조절하는 스타일 객체
       objectPositionValue: { objectPosition: '0 100%' },
+      // 로딩창 블록 여부
       block: true,
+      // 배경 이미지 리스트
       backimgList: [
         '/eostower.webp',
         '/pathoftime.webp',
         '/mureung.webp',
       ],
+      // 배경을 제외한 이미지 리스트
       pubimgList: [
         '/imgicon.png',
         '/mushroombg.png',
       ],
+      // 현재 배경 이미지 인덱스
       currentBackimgIndex: 0,
     }
   },
   mounted() {
+    // 이미지 로딩 완료 후 로딩창 블록 해제
     window.addEventListener('load', () => { this.block = false });
+    // 이미지 미리 로딩
     this.backimgList.forEach((img) => {
       const image = new Image();
       image.src = img;
@@ -113,9 +91,11 @@ export default {
     });
   },
   methods: {
+    // 2d 오브젝트의 상하 움직임을 조절하는 메소드
     backimgMoveUp(percent) {
       this.objectPositionValue = { objectPosition: '0 ' + (100 - percent) + '%' }
     },
+    // 배경 이미지의 좌우 움직임을 조절하는 메소드
     backimgMove() {
       if (this.$route.path === '/') {
         return 'backimg-move'
@@ -123,6 +103,7 @@ export default {
         return ''
       }
     },
+    // 배경 이미지를 변경하는 메소드
     backimgChange() {
       this.currentBackimgIndex = (this.currentBackimgIndex + 1) % this.backimgList.length;
     }
