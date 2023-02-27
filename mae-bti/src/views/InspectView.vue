@@ -7,7 +7,7 @@
     :next-question="nextQuestion" :prev-question="prevQuestion" :response-question="responseQuestion"
     :selected-class="selectedClass" :next-button-blink="nextButtonBlink">
   </Question>
-  <RouterLink v-if="resultVisible" @click="resultLoading=true" class="button-blink" :to="{ name: 'result', query: { job: jobRank[0] } }">결과 보기
+  <RouterLink v-if="resultVisible" @click="resultLoading=true, sendJobName()" class="button-blink" :to="{ name: 'result', query: { job: jobRank[0] } }">결과 보기
   </RouterLink>
   <a v-else v-if="incompleteChecker" class="incomplete button-blink" @click="toIncompleteQuestion"
     ref="incompleteButton">응답하지않은 문항으로 가기</a>
@@ -200,7 +200,18 @@ export default {
     nextButtonBlink() {
       // 현재 인덱스에 응답이 존재하고, 응답하지 않은 문항으로 가기 버튼이 활성화되어있지 않고, 현재 인덱스가 마지막 인덱스보다 작고, 결과 페이지로 이동할 수 없으면 true를 반환
       return (this.storeResponse[this.currentIndex] !== undefined) && (this.incompleteChecker === false) && (this.currentIndex < this.questionLength - 1) && (this.resultVisible === false) ? true : false;
-    }
+    },
+    // vue-gtag를 이용하여 구글 애널리틱스에 jobname 이벤트를 전송하는 메소드
+    sendJobName() {
+      this.$gtag.customMap({
+        '메비티아이 결과': 'result_jobname',
+        '메비티아이 응답': 'result_response'
+      });
+      this.$gtag.event('result_job', {
+        result_jobname: this.jobRank[0],
+        result_response: this.storeResponse
+      });
+    },
   }
 }
 </script>
