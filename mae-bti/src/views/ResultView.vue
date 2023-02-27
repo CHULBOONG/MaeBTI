@@ -4,7 +4,7 @@
     <div class="white-shadow">{{ getJobAlias() }}</div>
     <div class="white-shadow" style="font-size: 20px;">{{ $route.query.job }}</div>
     <div class="image-area">
-        <img :src="'/job_illust_/' + $route.query.job + '.png'" />
+        <img :src="getJobImageSrc()" />
     </div>
     <div class="white-shadow">ㅤ</div>
     <!-- <div class="white-shadow" style="text-align: center;">{{ getJobProperty() }}</div> -->
@@ -55,7 +55,7 @@ export default {
             content: {
                 title: this.getJobAlias() + ' ' + this.$route.query.job,
                 description: '나에게 가장 잘 맞는 직업은 무엇일까?',
-                imageUrl: 'https://mae-bti.netlify.app/job_illust_/' + this.$route.query.job + '.png',
+                imageUrl: this.getJobImageSrc(),
                 link: {
                     mobileWebUrl: 'https://mae-bti.netlify.app/',
                     webUrl: 'https://mae-bti.netlify.app/',
@@ -86,7 +86,14 @@ export default {
                     return Alias[i].alias;
                 }
             }
-        }
+        },
+        getJobImageSrc() {
+            for (let i = 0; i < Alias.length; i++) {
+                if (Alias[i].jobname === this.$route.query.job) {
+                    return Alias[i].imgsrc;
+                }
+            }
+        },
     },
 }
 </script>
