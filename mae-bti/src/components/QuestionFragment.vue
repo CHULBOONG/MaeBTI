@@ -28,6 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    word-break: keep-all;
 }
 
 .button-response {

@@ -1,26 +1,26 @@
 [
     {
-        "question": "나는 직업의 유틸성을 중요하게 생각한다",
+        "question": "나는 직업의 강함도 중요하지만 무엇보다도 유틸성을 중요하게 생각한다",
         "sortation": "isUtilGood"
     },
     {
-        "question": "무엇보다도 코어강화 난이도가 쉬워야한다",
+        "question": "사용 스킬이 적더라도 코어강화 난이도가 쉬워야한다",
         "sortation": "isCoreEasy"
     },
     {
-        "question": "직업의 이론상 데미지가 높아야한다",
+        "question": "난이도가 어렵더라도 직업의 이론상 데미지가 높아야한다",
         "sortation": "isDamageGood"
     },
     {
-        "question": "나는 유니온 캐릭터 육성에 자신있다!",
-        "sortation": "isUnion6000"
+        "question": "나는 유니온 캐릭터 육성에 자신이 있는 편이다",
+        "sortation": "isUnionable"
     },
     {
-        "question": "주로 보스플레이를 즐긴다",
+        "question": "나는 무엇보다도 RPG는 보스플레이에서 재미를 느낀다고 생각한다",
         "sortation": "isBossEasy"
     },
     {
-        "question": "주로 사냥플레이를 즐긴다",
+        "question": "나는 RPG의 사냥플레이에서 재미를 느끼는 편이다",
         "sortation": "isFieldEasy"
     },
     {
@@ -52,7 +52,7 @@
         "sortation": "hasOwnBind"
     },
     {
-        "question": "강력한 키다운 공격 스킬이 있으면 좋다",
+        "question": "리스크가 있더라도 강력한 키다운 공격 스킬이 있으면 좋다",
         "sortation": "hasKeyDown"
     },
     {
@@ -64,6 +64,10 @@
         "sortation": "isAttackRangeShort"
     },
     {
+        "question": "원거리에서 공격하는 딜러가 좋다",
+        "sortation": "isAttackRangeLong"
+    },
+    {
         "question": "카루타, 스데미까지 잡기 편한 직업이 좋다",
         "sortation": "isNewbieGood"
     },
@@ -72,7 +76,7 @@
         "sortation": "isFieldSkillEasy"
     },
     {
-        "question": "보스 딜링 난이도가 쉬운 직업이 좋다",
+        "question": "어려운 컨트롤이 없고 보스 딜링 난이도가 쉬운 직업이 좋다",
         "sortation": "isEasyDeal"
     }
 ]
